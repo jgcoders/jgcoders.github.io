@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
+<meta name="theme-color" content="#0e1012">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{title}}">
+<meta property="og:description" content="{{description}}">
+<meta property="og:image" content="{{root}}assets/og-{{lang}}.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="apple-itunes-app" content="app-id=6751161867">
+<link rel="alternate" hreflang="en" href="{{root}}index.html">
+<link rel="alternate" hreflang="pl" href="{{root}}pl/index.html">
+<link rel="icon" type="image/png" href="{{root}}assets/favicon.png">
+<link rel="apple-touch-icon" href="{{root}}assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{root}}styles.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="{{root}}assets/icon-64.png" alt="" width="34" height="34">Darts Training</a>
+    <nav class="nav">
+      <a href="#throw">{{nav_throw}}</a>
+      <a href="#features">{{nav_features}}</a>
+      <a href="#pro">{{nav_pro}}</a>
+      <a href="#faq">{{nav_faq}}</a>
+    </nav>
+    <a class="lang" href="{{other_lang_href}}" hreflang="{{other_lang}}">{{other_lang}}</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <span class="badge">{{badge}}</span>
+        <h1>{{h1}}</h1>
+        <p class="lead">{{lead}}</p>
+        <div class="stores">
+          <a class="store" href="{{app_store}}">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M10 18h4"/></svg>
+            <span><small>{{store_apple_small}}</small>App Store</span>
+          </a>
+          <a class="store alt" href="{{google_play}}">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 3.5v17a1 1 0 0 0 1.5.86l14-8.5a1 1 0 0 0 0-1.72l-14-8.5A1 1 0 0 0 6 3.5z"/></svg>
+            <span><small>{{store_google_small}}</small>Google Play</span>
+          </a>
+        </div>
+        <p class="note">{{free_note}}</p>
+      </div>
+      <div class="hero-art">
+        <div class="phone"><img src="{{root}}assets/{{lang}}/02-throw-compare.webp" alt="" width="620" height="1348"></div>
+        <div class="tip">{{tip}}</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="facts">
+    <ul>
+      <li>{{fact_1}}</li>
+      <li>{{fact_2}}</li>
+      <li>{{fact_3}}</li>
+      <li>{{fact_4}}</li>
+      <li>{{fact_5}}</li>
+    </ul>
+  </div>
+
+  <section class="throw" id="throw">
+    <div class="wrap split">
+      <div class="text">
+        <div class="eyebrow">{{throw_eyebrow}}</div>
+        <h2>{{throw_h2}}</h2>
+        <p>{{throw_p}}</p>
+        <div class="checks">
+          <div class="check"><h3>{{check_elbow}}</h3><p>{{check_elbow_p}}</p></div>
+          <div class="check"><h3>{{check_body}}</h3><p>{{check_body_p}}</p></div>
+          <div class="check"><h3>{{check_follow}}</h3><p>{{check_follow_p}}</p></div>
+          <div class="check"><h3>{{check_rhythm}}</h3><p>{{check_rhythm_p}}</p></div>
+        </div>
+        <p>{{throw_p2}}</p>
+        <div class="private">{{private}}</div>
+      </div>
+      <div class="phones">
+        <div class="phone small"><img src="{{root}}assets/{{lang}}/03-throw-tips.webp" alt="" loading="lazy" width="620" height="1348"></div>
+        <div class="phone small"><img src="{{root}}assets/{{lang}}/01-home.webp" alt="" loading="lazy" width="620" height="1348"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="wrap">
+      <div class="center">
+        <div class="eyebrow">{{features_eyebrow}}</div>
+        <h2>{{features_h2}}</h2>
+      </div>
+      <div class="split reverse">
+        <div class="text">
+          <h3>{{drills_h3}}</h3>
+          <ul class="drills">
+            <li>{{drill_1}}</li>
+            <li>{{drill_2}}</li>
+            <li>{{drill_3}}</li>
+            <li>{{drill_4}}</li>
+            <li>{{drill_5}}</li>
+          </ul>
+          <p>{{drills_p}}</p>
+        </div>
+        <div class="phones">
+          <div class="phone small"><img src="{{root}}assets/{{lang}}/02-ingame.webp" alt="" loading="lazy" width="620" height="1348"></div>
+          <div class="phone small"><img src="{{root}}assets/{{lang}}/04-stats-doubles.webp" alt="" loading="lazy" width="620" height="1348"></div>
+        </div>
+      </div>
+      <div class="grid" style="margin-top:56px">
+        <div class="card"><div class="ico">⧉</div><h3>{{card_plan}}</h3><p>{{card_plan_p}}</p></div>
+        <div class="card"><div class="ico">↗</div><h3>{{card_stats}}</h3><p>{{card_stats_p}}</p></div>
+        <div class="card"><div class="ico">◎</div><h3>{{card_coach}}</h3><p>{{card_coach_p}}</p></div>
+        <div class="card"><div class="ico">⌂</div><h3>{{card_private}}</h3><p>{{card_private_p}}</p></div>
+        <div class="card"><div class="ico">◐</div><h3>{{card_themes}}</h3><p>{{card_themes_p}}</p></div>
+        <div class="card"><div class="ico">✎</div><h3>{{card_entry}}</h3><p>{{card_entry_p}}</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pro">
+    <div class="wrap">
+      <div class="center">
+        <div class="eyebrow">{{pro_eyebrow}}</div>
+        <h2>{{pro_h2}}</h2>
+      </div>
+      <div class="plans">
+        <div class="plan">
+          <h3>{{free_h3}}</h3>
+          <div class="price">{{free_price}}</div>
+          <ul>
+            <li>{{free_1}}</li>
+            <li>{{free_2}}</li>
+            <li>{{free_3}}</li>
+            <li>{{free_4}}</li>
+            <li class="no">{{free_5}}</li>
+          </ul>
+        </div>
+        <div class="plan pro">
+          <h3>{{pro_h3}}</h3>
+          <div class="price">{{pro_price}}</div>
+          <ul>
+            <li>{{pro_1}}</li>
+            <li>{{pro_2}}</li>
+            <li>{{pro_3}}</li>
+            <li>{{pro_4}}</li>
+            <li>{{pro_5}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="center"><h2>{{faq_h2}}</h2></div>
+      <div class="faq">
+        <details><summary>{{q1}}</summary><p>{{a1}}</p></details>
+        <details><summary>{{q2}}</summary><p>{{a2}}</p></details>
+        <details><summary>{{q3}}</summary><p>{{a3}}</p></details>
+        <details><summary>{{q4}}</summary><p>{{a4}}</p></details>
+        <details><summary>{{q5}}</summary><p>{{a5}}</p></details>
+        <details><summary>{{q6}}</summary><p>{{a6}}</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="wrap">
+      <img class="icon" src="{{root}}assets/icon-192.png" alt="" width="88" height="88">
+      <h2>{{cta_h2}}</h2>
+      <p>{{cta_p}}</p>
+      <div class="stores">
+        <a class="store" href="{{app_store}}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M10 18h4"/></svg>
+          <span><small>{{store_apple_small}}</small>App Store</span>
+        </a>
+        <a class="store alt" href="{{google_play}}">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 3.5v17a1 1 0 0 0 1.5.86l14-8.5a1 1 0 0 0 0-1.72l-14-8.5A1 1 0 0 0 6 3.5z"/></svg>
+          <span><small>{{store_google_small}}</small>Google Play</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 {{rights}}</span>
+    <a href="privacy.html">{{privacy}}</a>
+    {{contact_link}}
+    <a class="spacer" href="{{other_lang_href}}">{{other_lang}}</a>
+  </div>
+</footer>
+</body>
+</html>
