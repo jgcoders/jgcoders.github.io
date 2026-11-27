@@ -176,6 +176,21 @@ footer .spacer { margin-left: auto; }
 .legal li { color: var(--text-2); margin-bottom: 8px; }
 .legal .updated { color: var(--muted); font-size: 15px; }
 
+/* Guide pages */
+.guide .lead { font-size: 19px; color: var(--text); max-width: none; }
+.guide .lead b, .guide li b { color: var(--text); }
+.guide ol.steps { counter-reset: step; list-style: none; padding: 0; margin: 0 0 16px; }
+.guide ol.steps li {
+  counter-increment: step; position: relative; padding: 16px 16px 16px 60px; margin-bottom: 12px;
+  background: var(--surface); border: 1px solid var(--outline); border-radius: 16px;
+}
+.guide ol.steps li::before {
+  content: counter(step); position: absolute; left: 16px; top: 14px; width: 30px; height: 30px; border-radius: 50%;
+  display: grid; place-items: center; background: var(--accent); color: var(--on-accent); font-weight: 700;
+}
+.guide .note { margin-top: 36px; }
+.guide .cta { border-top: 1px solid var(--outline); }
+
 /* Phone width */
 @media (max-width: 900px) {
   .nav { display: none; }

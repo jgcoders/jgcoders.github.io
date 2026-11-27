@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dartspractice.app/sitemap.xml
